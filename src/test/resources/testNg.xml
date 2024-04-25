@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNGConcepts" parallel="tests" thread-count="2">
+    <test name="GoogleTest">
+        <parameter name="url" value="https://google.com"/>
+        <parameter name="browser" value="safari"/>
+        <parameter name="browser" value="chrome"/>
+        <parameter name="headless" value="false"/>
+        <classes>
+            <class name="TestNgConcepts.GoogleTest"/>
+        </classes>
+    </test>
+    <test name="OrangeHrmTest">
+        <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+        <parameter name="browser" value="chrome"/>
+        <parameter name="headless" value="true"/>
+        <classes>
+            <class name="TestNgConcepts.OrangeHrmTest"/>
+        </classes>
+    </test>
+</suite>
